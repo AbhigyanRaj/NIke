@@ -1,0 +1,122 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right , #cb2d3e , #ef473a);
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.top-bar a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 100%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #f4f4f4;
+}
+
+.main-header .options-left {
+    display: flex;
+    align-items: center;
+}
+
+.main-header .options-left .logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.advertisement {
+    flex: 3;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.advertisement .shoes-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-header .options-left a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.main-header .options-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.main-header .options-right a:last-child {
+    margin-right: 20px;
+}
+
+/* Additional Styling for Search Box */
+.searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+    background: white;
+    color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #73eb10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}
