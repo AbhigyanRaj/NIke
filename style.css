@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color: #f4f4f4; /* Set background color here */
 }
 
 .top-bar {
@@ -23,7 +23,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Set background color here */
+    position: relative; /* Make position relative for absolute positioning */
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4; /* Set background color here */
+    z-index: -1; /* Ensure it's behind other content */
 }
 
 .main-header .options-left {
@@ -85,7 +97,7 @@ body {
 
 .searchBox:hover > .searchButton {
     background: white;
-    color : #2f3640;
+    color: #2f3640;
 }
 
 .searchButton {
