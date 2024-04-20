@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Set background color here */
+    background-image: url('blue.jpg'); /* Add your image URL here */
 }
 
 .top-bar {
@@ -36,6 +36,9 @@ body {
     height: 100%;
     background-color: #f4f4f4; /* Set background color here */
     z-index: -1; /* Ensure it's behind other content */
+    background-image: url('Shoes.png'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
 }
 
 .main-header .options-left {
@@ -77,4 +80,3 @@ body {
 .main-header .options-right a:last-child {
     margin-right: 20px;
 }
-
