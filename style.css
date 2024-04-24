@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     z-index: -1; /* Ensure it's behind other content */
-    background-image: url('Shoes.png'); /* Add your image URL here */
+    background-image: url('blue.jpg'); /* Add your image URL here */
     background-size: cover;
     
     
